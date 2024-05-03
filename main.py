@@ -13,6 +13,10 @@ import time
 app = FastAPI()
 translator = Translator()
 
+# video 폴더 경로
+VIDEO_FOLDER = "/Users/minu/Desktop/upload/video"
+#VIDEO_FOLDER = "C:/workspace/Capstone/video"
+
 def extract_text_from_file(file_path:str)->dict:
     try:
         model_size = "small"
@@ -24,17 +28,21 @@ def extract_text_from_file(file_path:str)->dict:
         raise HTTPException(status_code=400, detail="Failed to transcribe audio: {}".format(str(ve)))
 
 #자막 생성 API
-@app.get("/subtitle")
-async def create_subtitle(video_id: str, youtube_link: str):
+@app.get("/api/json/{video_id}")
+async def create_subtitle(video_id: str):
     # 코드 실행 시작 시간 기록
     start_time = time.time()
     
-    # 유튜브 링크에서 오디오 추출
-    audio_file_path = extract_audio(youtube_link)
+    # 요청된 video_id에 해당하는 영상 파일 경로를 확인
+    video_path = os.path.join(VIDEO_FOLDER, f"{video_id}.mp4")
     
-    if audio_file_path:
+    # 해당하는 영상 파일이 존재하는지 확인
+    if not os.path.exists(video_path):
+        raise HTTPException(status_code=404, detail="해당하는 영상을 찾을 수 없습니다.")
+    
+    if video_path:
         # 오디오 추출 성공 시 자막 생성
-        segments = extract_text_from_file(audio_file_path)
+        segments = extract_text_from_file(video_path)
         subtitles = []
         for segment in segments:
             translated_text = translator.translate(segment.text, src="ko", dest="en").text
@@ -57,7 +65,7 @@ async def create_subtitle(video_id: str, youtube_link: str):
             json.dump(final_json, f, ensure_ascii=False, indent=4)
         
         # 작업 완료 후 임시 파일 삭제
-        os.remove(audio_file_path)
+        # os.remove(audio_file_path)
         
         # 코드 실행 종료 시간 기록
         end_time = time.time()
