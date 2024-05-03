@@ -23,7 +23,7 @@ def extract_text_from_file(file_path:str)->dict:
         raise HTTPException(status_code=400, detail="Failed to transcribe audio: {}".format(str(ve)))
 
 @app.post("/subtitle")
-async def create_subtitle(youtube_link: str):
+async def create_subtitle(video_id: int , youtube_link: str):
     # 코드 실행 시작 시간 기록
     start_time = time.time()
     
@@ -37,18 +37,22 @@ async def create_subtitle(youtube_link: str):
         for segment in segments:
             translated_text = translator.translate(segment.text, src="ko", dest="en").text
             subtitle = {
-                "id": segment.id,
+                #"id": segment.id,
                 "start": segment.start,
                 "end": segment.end,
-                "ko-text": segment.text,
-                "eng-text": translated_text
+                "korText": segment.text,
+                "engText": translated_text
             }
             subtitles.append(subtitle)
         
+        final_json={
+            "video_id": video_id,
+            "subtitleList": subtitles
+        }
         # JSON 파일로 저장
         json_file_path = "subtitles.json"
         with open(json_file_path, "w", encoding="utf-8") as f:
-            json.dump(subtitles, f, ensure_ascii=False, indent=4)
+            json.dump(final_json, f, ensure_ascii=False, indent=4)
         
         # 작업 완료 후 임시 파일 삭제
         os.remove(audio_file_path)
@@ -61,4 +65,4 @@ async def create_subtitle(youtube_link: str):
         # 추출된 오디오 파일 경로와 자막 파일 경로 반환
         return {"subtitles_file_path": json_file_path, "execution_time": execution_time}
     else:
-        raise HTTPException(status_code=500, detail="Failed to extract audio")
+        raise HTTPException(status_code=500, detail="Failed to generate subtitles")
