@@ -4,7 +4,6 @@ sys.path.append("./faster-whisper")
 
 from faster_whisper.transcribe import WhisperModel
 from googletrans import Translator
-#from google_trans_new import google_translator  
   
 import json
 from extract_audio import extract_audio

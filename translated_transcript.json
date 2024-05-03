@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "start": 0.0,
+        "end": 7.0,
+        "ko-text": " we were in grave danger",
+        "eng-text": "we were in grave diaryer"
+    },
+    {
+        "id": 2,
+        "start": 7.0,
+        "end": 11.0,
+        "ko-text": " we were in grave danger",
+        "eng-text": "we were in grave diaryer"
+    },
+    {
+        "id": 3,
+        "start": 11.0,
+        "end": 19.0,
+        "ko-text": " she had long dark hair",
+        "eng-text": "She has long dark hair"
+    },
+    {
+        "id": 4,
+        "start": 19.0,
+        "end": 23.0,
+        "ko-text": " she had long dark hair",
+        "eng-text": "She has long dark hair"
+    },
+    {
+        "id": 5,
+        "start": 23.0,
+        "end": 30.0,
+        "ko-text": " can we agree on a date?",
+        "eng-text": "Can we agree on a date?"
+    },
+    {
+        "id": 6,
+        "start": 30.0,
+        "end": 34.0,
+        "ko-text": " can we agree on a date?",
+        "eng-text": "Can we agree on a date?"
+    },
+    {
+        "id": 7,
+        "start": 34.0,
+        "end": 40.0,
+        "ko-text": " we have two sons and a daughter",
+        "eng-text": "We have two sons and a daughter"
+    },
+    {
+        "id": 8,
+        "start": 40.0,
+        "end": 46.0,
+        "ko-text": " we have two sons and a daughter",
+        "eng-text": "We have two sons and a daughter"
+    }
+]
