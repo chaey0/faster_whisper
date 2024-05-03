@@ -2,6 +2,7 @@ import os, sys
 sys.path.append("./faster-whisper")
 
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import JSONResponse
 from extract_audio import extract_audio
 from faster_whisper.transcribe import WhisperModel
 from googletrans import Translator
@@ -22,8 +23,9 @@ def extract_text_from_file(file_path:str)->dict:
     except ValueError as ve:
         raise HTTPException(status_code=400, detail="Failed to transcribe audio: {}".format(str(ve)))
 
-@app.post("/subtitle")
-async def create_subtitle(video_id: int , youtube_link: str):
+#자막 생성 API
+@app.get("/subtitle")
+async def create_subtitle(video_id: str, youtube_link: str):
     # 코드 실행 시작 시간 기록
     start_time = time.time()
     
@@ -63,6 +65,6 @@ async def create_subtitle(video_id: int , youtube_link: str):
         execution_time = end_time - start_time
         
         # 추출된 오디오 파일 경로와 자막 파일 경로 반환
-        return {"subtitles_file_path": json_file_path, "execution_time": execution_time}
+        return JSONResponse(final_json)
     else:
         raise HTTPException(status_code=500, detail="Failed to generate subtitles")
