@@ -3,7 +3,7 @@ sys.path.append("./faster-whisper")
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from thumnail import generate_thumbnail
+from thumbnail import generate_thumbnail
 from faster_whisper.transcribe import WhisperModel
 from googletrans import Translator
 import json
@@ -18,6 +18,7 @@ VIDEO_FOLDER = "/Users/minu/Desktop/upload/video"
 # VIDEO_FOLDER = "C:/workspace/Capstone/video"
 
 # thumbnail 폴더 경로
+# THUMBNAIL_FOLDER = "C:/workspace/Capstone/thumbnail"
 THUMBNAIL_FOLDER = "/Users/minu/Desktop/upload/thumbnail"
 
 def extract_text_from_file(file_path:str)->dict:
@@ -37,7 +38,7 @@ async def create_subtitle(video_id: str):
     start_time = time.time()
     
     # 요청된 video_id에 해당하는 영상 파일 경로를 확인
-    video_path = os.path.join(THUMBNAIL_FOLDER , f"{video_id}.jpg")
+    video_path = os.path.join(VIDEO_FOLDER, f"{video_id}.mp4")
     
     # 해당하는 영상 파일이 존재하는지 확인
     if not os.path.exists(video_path):
@@ -46,8 +47,8 @@ async def create_subtitle(video_id: str):
     if video_path:
         
         # 썸네일 생성
-        thumbnail_path = os.path.join(VIDEO_FOLDER, f"{video_id}.mp4")
-        generate_thumbnail(video_path, f"{video_id}.jpg")
+        thumbnail_path = os.path.join(THUMBNAIL_FOLDER, f"{video_id}.jpg")
+        generate_thumbnail(video_path, thumbnail_path)
         
         # 오디오 추출 성공 시 자막 생성
         segments = extract_text_from_file(video_path)
