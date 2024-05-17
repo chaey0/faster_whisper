@@ -1,0 +1,14 @@
+selenium==4.21.0
+webdriver_manager==4.0.1
+
+moviepy==1.0.3
+#pip install faster-whisper
+fastapi==0.109.2
+uvicorn==0.27.1
+googletrans==4.0.0-rc1
+
+av==11.*
+ctranslate2>=4.0,<5
+huggingface_hub>=0.13
+tokenizers>=0.13,<0.16
+onnxruntime>=1.14,<2
