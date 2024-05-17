@@ -1,71 +1,615 @@
 {
-    "video_id": 5,
+    "video_id": "36",
     "subtitleList": [
         {
             "start": 0.0,
-            "end": 6.36,
-            "korText": " 아, 요즘 최근 난리입니다 서울의 하루 살이 때가 나타난 건데 몸 길이가 3cm이고",
-            "engText": "Oh, it's a recent age."
+            "end": 3.72,
+            "korText": " 전국 어디에 신도시를 가도 거기 상업 지구는 다 똑같아요.",
+            "engText": [
+                {
+                    "translation_text": "In every new city in the country, the commercial world is the same."
+                }
+            ]
         },
         {
-            "start": 6.36,
-            "end": 11.36,
-            "korText": " 날개를 펴면 5cm나 되기 때문에 벌레치고 작은 크기는 아니에요.",
-            "engText": "If you open your wings, it's 5cm, so it's not a bulk and small size."
+            "start": 3.72,
+            "end": 4.88,
+            "korText": " 아 그렇죠.",
+            "engText": [
+                {
+                    "translation_text": "Oh, yeah."
+                }
+            ]
         },
         {
-            "start": 11.36,
-            "end": 14.36,
-            "korText": " 현장 취재한 사회부 한민정 기자 모습 잠깐 보시죠.",
-            "engText": "Let's take a look at the reporter Han Min -jung, the Ministry of Social Affairs."
+            "start": 4.88,
+            "end": 8.24,
+            "korText": " 근데 그나마 거기는 건축 양식에 관한",
+            "engText": [
+                {
+                    "translation_text": "But it's not about architecture, it's about architecture, it's about architecture, it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture, and it's about architecture."
+                }
+            ]
         },
         {
-            "start": 14.36,
-            "end": 16.92,
-            "korText": " 제가 여기 10분 정도 서있어 봤습니다.",
-            "engText": "I've been standing here for about 10 minutes."
+            "start": 8.24,
+            "end": 10.8,
+            "korText": " 건축의 외관에 관한",
+            "engText": [
+                {
+                    "translation_text": "It's about the appearance of architecture."
+                }
+            ]
         },
         {
-            "start": 16.92,
-            "end": 23.240000000000002,
-            "korText": " 보시다시피 제 얼굴과 머리카락 그리고 상이 하이 할 것 없이 빼곡히 동량 하루 살이 때가",
-            "engText": "As you can see, my face, hair, and Sang -hyung are so high that the same day"
+            "start": 10.8,
+            "end": 14.200000000000001,
+            "korText": " 그렇게 집들 모양을 조금씩 조금씩은 다르게 짓고",
+            "engText": [
+                {
+                    "translation_text": "And I'm going to take a little bit of a different shape of the houses."
+                }
+            ]
         },
         {
-            "start": 23.240000000000002,
-            "end": 28.76,
-            "korText": " 둘러붙어 있습니다. 여기 옆을 보시면 조명에도 그리고 취재진의 옷에도",
-            "engText": "Surrounded.If you look at the side here, even in lights and the reporters' clothes"
+            "start": 14.200000000000001,
+            "end": 17.28,
+            "korText": " 위에 꼭대기는 푸른색 나머지는 흰색으로",
+            "engText": [
+                {
+                    "translation_text": "The top one is blue. The rest is white."
+                }
+            ]
         },
         {
-            "start": 28.8,
-            "end": 31.64,
-            "korText": " 이렇게 하루 살이들이 빼곡히 달라붙어 있습니다.",
-            "engText": "Like this, the flesh is stuck."
+            "start": 17.28,
+            "end": 20.12,
+            "korText": " 물론 붉은 지붕을 한 데 몇 군데 있고",
+            "engText": [
+                {
+                    "translation_text": "Of course, there are a few red roofs."
+                }
+            ]
         },
         {
-            "start": 31.64,
-            "end": 34.88,
-            "korText": " 이게 보기엔 좀 징그러운데 사람에게 해가 되진 않나요?",
-            "engText": "It's a bit disgusting to see this, but isn't it harmful to people?"
+            "start": 20.12,
+            "end": 23.0,
+            "korText": " 그래서 나는 그게 뭐 얼마나 세련됐냐",
+            "engText": [
+                {
+                    "translation_text": "So I don't know how sophisticated that is."
+                }
+            ]
         },
         {
-            "start": 34.88,
-            "end": 41.040000000000006,
-            "korText": " 입이 없습니다. 퇴화를 해서 모기처럼 사람을 물거나 동식물에 질병을 옮기는 일은 없다고 하는데요.",
-            "engText": "There is no mouth.It is said that there is no degeneration and biting people like mosquitoes or moving to animals and animals."
+            "start": 23.0,
+            "end": 25.080000000000002,
+            "korText": " 건축학적으로 어떠냐를 떠나서",
+            "engText": [
+                {
+                    "translation_text": "I left architecturally."
+                }
+            ]
         },
         {
-            "start": 41.040000000000006,
-            "end": 45.040000000000006,
-            "korText": " 그렇지만 저렇게 때로 다니다 보니까 보기에 좋지가 않아요.",
-            "engText": "But it's not good to see it."
+            "start": 25.080000000000002,
+            "end": 29.96,
+            "korText": " 신도시의 상업 지구를 우리가 다른 데서 보는 먹자 골목과는 달리",
+            "engText": [
+                {
+                    "translation_text": "Let's take a look at the commercial world of the new city and eat it from somewhere else, unlike the alleys."
+                }
+            ]
         },
         {
-            "start": 45.040000000000006,
-            "end": 51.28,
-            "korText": " 주로 서울 강남과 성동, 광진, 경기도 남양주 등 한강 인근 지역에서 관측이 되고 있습니다.",
-            "engText": "It is mainly observed in the area near the Han River, including Gangnam, Seongdong, Gwangjin, and Namyangju, Gyeonggi -do."
+            "start": 30.2,
+            "end": 32.04,
+            "korText": " 이렇게 나름 이쁘게 디자인을 했구나.",
+            "engText": [
+                {
+                    "translation_text": "You designed it so beautifully."
+                }
+            ]
+        },
+        {
+            "start": 32.04,
+            "end": 33.2,
+            "korText": " 최소를 안 걸어 어찌될 것 같은데.",
+            "engText": [
+                {
+                    "translation_text": "I don't know what's going to happen."
+                }
+            ]
+        },
+        {
+            "start": 33.2,
+            "end": 36.4,
+            "korText": " 여기서 현대 건축 얘기를 해야 되는데",
+            "engText": [
+                {
+                    "translation_text": "I'm going to talk about modern architecture here."
+                }
+            ]
+        },
+        {
+            "start": 36.4,
+            "end": 38.68,
+            "korText": " 현대 도시가 왜 아름답지 않은지",
+            "engText": [
+                {
+                    "translation_text": "Why the modern city isn't beautiful?"
+                }
+            ]
+        },
+        {
+            "start": 38.68,
+            "end": 40.36,
+            "korText": " 여기가 뭐냐면 네 가지가 있어요.",
+            "engText": [
+                {
+                    "translation_text": "There are four things here."
+                }
+            ]
+        },
+        {
+            "start": 40.36,
+            "end": 41.52,
+            "korText": " 재료와 형태.",
+            "engText": [
+                {
+                    "translation_text": "Materials and forms."
+                }
+            ]
+        },
+        {
+            "start": 41.52,
+            "end": 44.08,
+            "korText": " 재료와 형태가 이 매트릭스를 딱 그리면",
+            "engText": [
+                {
+                    "translation_text": "So if I were to draw this matrix with materials and shapes,"
+                }
+            ]
+        },
+        {
+            "start": 44.08,
+            "end": 47.2,
+            "korText": " 재료가 다양한데 형태도 다양한 경우가 있고",
+            "engText": [
+                {
+                    "translation_text": "There's a lot of ingredients, but there's a lot of forms."
+                }
+            ]
+        },
+        {
+            "start": 47.2,
+            "end": 49.68,
+            "korText": " 재료가 단순한데 형태도 단순한 경우가 있고",
+            "engText": [
+                {
+                    "translation_text": "It's a simple material, but sometimes it's a simple form."
+                }
+            ]
+        },
+        {
+            "start": 49.68,
+            "end": 51.72,
+            "korText": " 형태는 복잡한데 재료가 단순한 경우가 있고",
+            "engText": [
+                {
+                    "translation_text": "The form is complicated, but sometimes the material is simple."
+                }
+            ]
+        },
+        {
+            "start": 51.72,
+            "end": 54.16,
+            "korText": " 이렇게 네 가지 매트릭스가 있을 거 아니에요.",
+            "engText": [
+                {
+                    "translation_text": "There's not going to be four matrixes like this."
+                }
+            ]
+        },
+        {
+            "start": 54.16,
+            "end": 56.56,
+            "korText": " 어떤 경우에 우리가 아름답다고 느끼냐면",
+            "engText": [
+                {
+                    "translation_text": "In some cases, we feel beautiful."
+                }
+            ]
+        },
+        {
+            "start": 56.56,
+            "end": 58.84,
+            "korText": " 재료가 단순한데 형태가 복잡한 경우예요.",
+            "engText": [
+                {
+                    "translation_text": "It's simple, but it's complicated in form."
+                }
+            ]
+        },
+        {
+            "start": 59.84,
+            "end": 62.720000000000006,
+            "korText": " 그리고 산토린이가 재료는 똑같죠.",
+            "engText": [
+                {
+                    "translation_text": "And it's the same material."
+                }
+            ]
+        },
+        {
+            "start": 62.720000000000006,
+            "end": 65.28,
+            "korText": " 형태는 지형에 따라서 다 달라요.",
+            "engText": [
+                {
+                    "translation_text": "The form is different from the topography."
+                }
+            ]
+        },
+        {
+            "start": 65.28,
+            "end": 67.12,
+            "korText": " 땅의 생김새에 따라서.",
+            "engText": [
+                {
+                    "translation_text": "Depends on what the earth looks like."
+                }
+            ]
+        },
+        {
+            "start": 67.12,
+            "end": 71.52000000000001,
+            "korText": " 산토린이는 구할 수 있는 건축재자가 그 동네에는 흙밖에 없는 거예요.",
+            "engText": [
+                {
+                    "translation_text": "Santorin has only dirt in the neighborhood where the builders can save her."
+                }
+            ]
+        },
+        {
+            "start": 71.52000000000001,
+            "end": 73.52000000000001,
+            "korText": " 토스카나는 벽돌밖에 없고",
+            "engText": [
+                {
+                    "translation_text": "There's only bricks in Toscana."
+                }
+            ]
+        },
+        {
+            "start": 73.52000000000001,
+            "end": 75.84,
+            "korText": " 우리나라 한옥 같은 경우에는 나무밖에 없고",
+            "engText": [
+                {
+                    "translation_text": "In the case of Hanok my country, there's only trees."
+                }
+            ]
+        },
+        {
+            "start": 75.84,
+            "end": 77.72,
+            "korText": " 그러면 재료가 통일될 수밖에 없어요.",
+            "engText": [
+                {
+                    "translation_text": "And the material has to be unified."
+                }
+            ]
+        },
+        {
+            "start": 77.72,
+            "end": 79.32000000000001,
+            "korText": " 물류가 안 좋기 때문에.",
+            "engText": [
+                {
+                    "translation_text": "Because the current is bad."
+                }
+            ]
+        },
+        {
+            "start": 79.32000000000001,
+            "end": 82.72,
+            "korText": " 그런데 우리 현대 도시는 형태는 단순한데 재료가 다양해.",
+            "engText": [
+                {
+                    "translation_text": "But our modern city is simple in form, but it's a lot of material."
+                }
+            ]
+        },
+        {
+            "start": 82.72,
+            "end": 83.52000000000001,
+            "korText": " 그러면 안 예뻐요.",
+            "engText": [
+                {
+                    "translation_text": "That's not pretty."
+                }
+            ]
+        },
+        {
+            "start": 83.52000000000001,
+            "end": 86.12,
+            "korText": " 왜냐하면 지금은 물류가 너무 발달을 해서",
+            "engText": [
+                {
+                    "translation_text": "Because now the current has evolved too much."
+                }
+            ]
+        },
+        {
+            "start": 86.12,
+            "end": 88.32000000000001,
+            "korText": " 전 세계 온갖 데서 재료가 와요.",
+            "engText": [
+                {
+                    "translation_text": "Materials come from all over the world."
+                }
+            ]
+        },
+        {
+            "start": 88.60000000000001,
+            "end": 91.56,
+            "korText": " 벽돌 건물 옆에 화강석 건물이고 그 옆에 유리 건물이고 이러잖아요.",
+            "engText": [
+                {
+                    "translation_text": "It's a granite building next to a brick building, and a glass building next to it."
+                }
+            ]
+        },
+        {
+            "start": 91.56,
+            "end": 93.96000000000001,
+            "korText": " 그래서 우리가 아름다운 도시를 만들려면",
+            "engText": [
+                {
+                    "translation_text": "So if we want to create a beautiful city,"
+                }
+            ]
+        },
+        {
+            "start": 93.96000000000001,
+            "end": 95.72000000000001,
+            "korText": " 그렇게 건축벽규를 잡으면 돼요.",
+            "engText": [
+                {
+                    "translation_text": "That's how you get the building plan."
+                }
+            ]
+        },
+        {
+            "start": 95.72000000000001,
+            "end": 97.96000000000001,
+            "korText": " 재료를 통일시켜야 돼요.",
+            "engText": [
+                {
+                    "translation_text": "We need to unify the material."
+                }
+            ]
+        },
+        {
+            "start": 97.96000000000001,
+            "end": 100.36000000000001,
+            "korText": " 그래서 보스턴 같은 경우에 제일 유명한 거리가",
+            "engText": [
+                {
+                    "translation_text": "So the most famous distance, like Boston,"
+                }
+            ]
+        },
+        {
+            "start": 100.36000000000001,
+            "end": 102.16000000000001,
+            "korText": " 뉴베리 스트리트라고 있거든요.",
+            "engText": [
+                {
+                    "translation_text": "It's called Newbury Street."
+                }
+            ]
+        },
+        {
+            "start": 102.16000000000001,
+            "end": 104.92000000000002,
+            "korText": " 그거 되게 아름다운 미국에서 제일 유명한 쇼핑거리인데",
+            "engText": [
+                {
+                    "translation_text": "That's one of the most famous shopping malls in America."
+                }
+            ]
+        },
+        {
+            "start": 104.92000000000002,
+            "end": 106.52000000000001,
+            "korText": " 거기는 건축벽규가 딱 하나예요.",
+            "engText": [
+                {
+                    "translation_text": "There's only one building wall there."
+                }
+            ]
+        },
+        {
+            "start": 106.52000000000001,
+            "end": 109.44000000000001,
+            "korText": " 모든 재료를 빨간색 벽돌로 해라.",
+            "engText": [
+                {
+                    "translation_text": "Do all the ingredients with red bricks."
+                }
+            ]
+        },
+        {
+            "start": 109.44000000000001,
+            "end": 110.96000000000001,
+            "korText": " 그럼 새로 건물을 지어도",
+            "engText": [
+                {
+                    "translation_text": "Then you can build a new building."
+                }
+            ]
+        },
+        {
+            "start": 110.96000000000001,
+            "end": 113.96000000000001,
+            "korText": " 모던한 건물을 짓는데 재료는 빨간 벽돌로 해야 돼요.",
+            "engText": [
+                {
+                    "translation_text": "We're building a modern building, but the materials have to be red bricks."
+                }
+            ]
+        },
+        {
+            "start": 113.96000000000001,
+            "end": 116.84,
+            "korText": " 그러니까 우리가 아름답다고 느끼는 거는",
+            "engText": [
+                {
+                    "translation_text": "I mean, what we feel beautiful about..."
+                }
+            ]
+        },
+        {
+            "start": 116.88000000000001,
+            "end": 120.8,
+            "korText": " 불규칙, 완전 규칙을 1이라고 치고 불규칙이 2라고 치면",
+            "engText": [
+                {
+                    "translation_text": "An irregular, a perfect rule, is equal to 1 and an irregular is equal to 2."
+                }
+            ]
+        },
+        {
+            "start": 120.8,
+            "end": 122.04,
+            "korText": " 한 1.4?",
+            "engText": [
+                {
+                    "translation_text": "One point four?"
+                }
+            ]
+        },
+        {
+            "start": 122.04,
+            "end": 124.44,
+            "korText": " 이 정도의 프랙탈 지수라고 있어요.",
+            "engText": [
+                {
+                    "translation_text": "It's kind of a fractal exponent."
+                }
+            ]
+        },
+        {
+            "start": 124.44,
+            "end": 127.52000000000001,
+            "korText": " 그 정도의 어느 정도의 불규칙성을 있을 때",
+            "engText": [
+                {
+                    "translation_text": "When there's a certain degree of irregularity,"
+                }
+            ]
+        },
+        {
+            "start": 127.52000000000001,
+            "end": 128.72,
+            "korText": " 아름답다고 느낀다는 거예요.",
+            "engText": [
+                {
+                    "translation_text": "I feel beautiful."
+                }
+            ]
+        },
+        {
+            "start": 128.72,
+            "end": 133.08,
+            "korText": " 근데 지금은 너무 복잡하고 형태는 단순하고",
+            "engText": [
+                {
+                    "translation_text": "But now it's too complicated, and the form is simple."
+                }
+            ]
+        },
+        {
+            "start": 133.08,
+            "end": 134.72,
+            "korText": " 그게 현대도시 문제예요.",
+            "engText": [
+                {
+                    "translation_text": "That's the problem with modern cities."
+                }
+            ]
+        },
+        {
+            "start": 134.72,
+            "end": 136.16,
+            "korText": " 그래서 저는 안타까운 게",
+            "engText": [
+                {
+                    "translation_text": "So, unfortunately for me,"
+                }
+            ]
+        },
+        {
+            "start": 136.16,
+            "end": 139.64000000000001,
+            "korText": " 산토리니섬도 그런 면에서는 잘 따라했지만",
+            "engText": [
+                {
+                    "translation_text": "Santorini also did well in that regard."
+                }
+            ]
+        },
+        {
+            "start": 139.64000000000001,
+            "end": 143.16,
+            "korText": " 그거를 만약에 천안 아산에 맞는 건축 재료",
+            "engText": [
+                {
+                    "translation_text": "What if it's a building material for clairvoyance?"
+                }
+            ]
+        },
+        {
+            "start": 143.2,
+            "end": 147.12,
+            "korText": " 그걸로 표현만 했으면은 더 좋지 않았을까.",
+            "engText": [
+                {
+                    "translation_text": "Wouldn't it have been better if I just said it?"
+                }
+            ]
+        },
+        {
+            "start": 147.12,
+            "end": 148.24,
+            "korText": " 호두껍질?",
+            "engText": [
+                {
+                    "translation_text": "The nut shell?"
+                }
+            ]
+        },
+        {
+            "start": 151.44,
+            "end": 153.2,
+            "korText": " 호두를 이렇게 병력을",
+            "engText": [
+                {
+                    "translation_text": "I'm gonna need you to use the wharf like this."
+                }
+            ]
+        },
+        {
+            "start": 153.2,
+            "end": 154.4,
+            "korText": " 호두의 모양을",
+            "engText": [
+                {
+                    "translation_text": "The shape of the wharf."
+                }
+            ]
         }
     ]
 }
