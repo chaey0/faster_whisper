@@ -10,16 +10,35 @@ import json
 from typing import Optional
 import time
 
+import requests
+
+from fastapi import FastAPI, Query, HTTPException
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from urllib.parse import unquote
+
+
 app = FastAPI()
-translator = Translator()
+# translator = Translator()
+
+# Hugging Face API 엔드포인트 및 API 토큰 설정
+HUGGING_FACE_API_URL = "https://api-inference.huggingface.co/models/Helsinki-NLP/opus-mt-ko-en"
+
+# HUGGING_FACE_API_URL = "https://api-inference.huggingface.co/models/facebook/mbart-large-50-many-to-many-mmt"
+
+HUGGING_FACE_API_TOKEN = "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"
+
 
 # video 폴더 경로
-VIDEO_FOLDER = "/Users/minu/Desktop/upload/video"
-# VIDEO_FOLDER = "C:/workspace/Capstone/video"
+# video 폴더 경로
+#VIDEO_FOLDER = "/Users/minu/Desktop/upload/video"
+VIDEO_FOLDER = "C:/workspace/Capstone/video"
 
 # thumbnail 폴더 경로
-# THUMBNAIL_FOLDER = "C:/workspace/Capstone/thumbnail"
-THUMBNAIL_FOLDER = "/Users/minu/Desktop/upload/thumbnail"
+THUMBNAIL_FOLDER = "C:/workspace/Capstone/thumbnail"
+#THUMBNAIL_FOLDER = "/Users/minu/Desktop/upload/thumbnail"
 
 def extract_text_from_file(file_path:str)->dict:
     try:
@@ -30,6 +49,18 @@ def extract_text_from_file(file_path:str)->dict:
         return segments
     except ValueError as ve:
         raise HTTPException(status_code=400, detail="Failed to transcribe audio: {}".format(str(ve)))
+
+# Hugging Face API를 사용하여 번역 요청 보내기
+def translate_with_hugging_face_api(text: str) -> str:
+    payload = {"inputs": text}
+    headers = {"Authorization": f"Bearer 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"}
+    response = requests.post(HUGGING_FACE_API_URL, headers=headers, json=payload)
+    if response.status_code == 200:
+        result = response.json()
+      
+        return result
+    else:
+        raise HTTPException(status_code=500, detail="Failed to translate text")
 
 #자막 생성 API
 @app.get("/api/json/{video_id}")
@@ -50,11 +81,12 @@ async def create_subtitle(video_id: str):
         thumbnail_path = os.path.join(THUMBNAIL_FOLDER, f"{video_id}.jpg")
         generate_thumbnail(video_path, thumbnail_path)
         
+        
         # 오디오 추출 성공 시 자막 생성
         segments = extract_text_from_file(video_path)
         subtitles = []
         for segment in segments:
-            translated_text = translator.translate(segment.text, src="ko", dest="en").text
+            translated_text = translate_with_hugging_face_api(segment.text)
             subtitle = {
                 #"id": segment.id,
                 "start": segment.start,
@@ -81,7 +113,44 @@ async def create_subtitle(video_id: str):
         # 코드 실행 시간 계산
         execution_time = end_time - start_time
         
+        final_json["execution_time"] = execution_time
+        
         # 추출된 오디오 파일 경로와 자막 파일 경로 반환
         return JSONResponse(final_json)
     else:
         raise HTTPException(status_code=500, detail="Failed to generate subtitles")
+
+@app.get("/translate")
+async def translate(word: str = Query(None)):  # 선택적 매개변수로 설정
+    if not word:
+        raise HTTPException(status_code=400, detail="No word provided")
+
+    service = Service(executable_path=ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service)
+    try:
+        print(f"Translating the word: {word}")
+        url = f'https://en.dict.naver.com/#/search?range=word&query={word}'
+        driver.get(url)
+        time.sleep(5)  # 페이지 로드 완료를 위해 대기
+
+        # 번역 결과 추출
+        real_word_elements = driver.find_elements(By.CSS_SELECTOR, "div.component_keyword > div.row strong.highlight")
+        eng_meaning_elements = driver.find_elements(By.CSS_SELECTOR, "div.component_keyword > div.row p.mean")
+
+        if not eng_meaning_elements:
+            raise HTTPException(status_code=404, detail="Translation not found")
+
+        meaning_list = []
+        for real_word, eng_meaning in zip(real_word_elements, eng_meaning_elements):
+            meaning_list.append({
+                "realWord": real_word.text,
+                "meaning": eng_meaning.text
+            })
+
+        data = {
+            "word": unquote(word),
+            "engMeanings": meaning_list
+        }
+        return data
+    finally:
+        driver.quit()
