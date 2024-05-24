@@ -16,7 +16,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from urllib.parse import unquote
 
-
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 app = FastAPI()
 translator = Translator()
@@ -89,6 +89,8 @@ async def create_subtitle(video_id: str):
         end_time = time.time()
         # 코드 실행 시간 계산
         execution_time = end_time - start_time
+        
+        final_json["execution_time"] = execution_time
         
         # 추출된 오디오 파일 경로와 자막 파일 경로 반환
         return JSONResponse(final_json)
